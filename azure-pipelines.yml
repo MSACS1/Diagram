@@ -1,8 +1,6 @@
-# Azure Key Vault v2
-# Download Azure Key Vault secrets.
-- task: AzureKeyVault@1
+- task: AzureKeyVault@2
   inputs:
-    azureSubscription: 'ME-MngEnvMCAP119450-aschneider-1'
+    azureSubscription: 'ME-MngEnvMCAP119450-aschneider-1(9fb1be2d-e1f9-483e-a161-164795e49a40)'
     KeyVaultName: 'KV8436'
-    SecretsFilter: 'test'
+    SecretsFilter: '*'
     RunAsPreJob: false
